@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+    --black : #333;
+}
+
+
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:lightyellow;
+    height:100vh;
+}
+
+/* frooz */
+.frooz{
+    margin: auto;
+}
+
+.frooz .face{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border: 2px solid var(--black);
+    background-color: #ff00bf;
+    position: relative;
+}
+
+.frooz .eyes .left, .frooz .eyes .right{
+    width:75px;
+    height: 75px;
+    background-color: rgb(250, 168, 168);
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid var(--black);
+}
+
+.frooz .eyes .left{
+    top: 10px;
+    left: 10px;
+}
+
+.frooz .eyes .right{
+    top: 10px;
+    right: 10px;
+}
+
+.frooz .eyes .left .iris, .frooz .eyes .right .iris{
+    width:50px;
+    height:50px;
+    background-color: #3b3c3d; ;
+    border-radius: 50%;
+    position: absolute;
+    bottom:2px;
+    right:2px;
+}
+
+.frooz .eyes .left .iris .glow , .frooz .eyes .right .iris .glow{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom:10px;
+    right:10px;
+}
+
+.frooz .nose{
+    width:20px;
+    height:15px;
+    border-radius: 50%;
+    border: 2px solid var(--black);
+    border-left:none;
+    position: absolute;
+    top: 90px;
+    left: 100px;
+}
+
+.frooz .mouth{
+    width:150px;
+    height:50px;
+    background-color: #ff7b00;
+    border : 2px solid var(--black);
+    border-radius: 30%;
+    position: absolute;
+    bottom: 35px; /*45*/
+    left:20px;
+}
+
+.frooz .name{
+    color: #ffa703;
+}
+
+/* glea */
+
+.glea{
+    margin: auto;
+}
+
+.glea .face{
+    width: 200px;
+    height: 200px;
+    border-radius: 45%;
+    border-bottom-right-radius: 70%;
+    border: 2px solid var(--black);
+    background-color:rgb(0, 255, 242);
+    position: relative;
+}
+
+.glea .eyes .left, .glea .eyes .right{
+    width: 60px;
+    height: 90px;
+    background-color: azure;
+    border-radius: 60%;
+    position: absolute;
+    border: 1px solid var(--black);
+}
+
+.glea .eyes .left{
+    top: 20px;
+    left: 15px;
+}
+
+.glea .eyes .right{
+    top: 20px;
+    right: 15px;
+}
+
+.glea .eyes .left .iris, .glea .eyes .right .iris{
+    width:30px;
+    height:30px;
+    background-color: #3b3c3d; ;
+    border-radius: 50%;
+    position: absolute;
+    bottom:10px;
+    right:2px;
+}
+
+.glea .eyes .left .iris .glow , .glea .eyes .right .iris .glow{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom:10px;
+    right:10px;
+}
+
+.glea .nose{
+    width: 20px;
+    height:20px;
+    border: 1px solid var(--black);
+    border-top:none ;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 80px;
+    left:80px;
+}
+
+.glea .mouth{
+    width: 100px;
+    height: 50px;
+    background-color: #3b3c3d;
+    position: absolute;
+    bottom: 20px;
+    left:30px;
+    border-radius: 50%;
+    border-bottom-left-radius: 30%;
+}
+
+.glea .name{
+    color: var(--black)
+}
+
+/* yumin */
+
+.yumin{
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+.yumin .face{
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 70%;
+    border: 2px solid var(--black);
+    background-color: #ffa703;
+    position: relative;
+}
+
+.yumin .eyes .left, .yumin .eyes .right{
+    width:100px;
+    height: 75px;
+    background-color: blanchedalmond;
+    border: 1px solid var(--black);
+    border-radius:  50%;;
+    position: absolute;
+}
+
+.yumin .eyes .left{
+    top: 20px;
+    left: 20px;
+}
+
+.yumin .eyes .right{
+    top: 20px;
+    right: 20px;
+}
+
+.yumin .eyes .left .iris, .yumin .eyes .right .iris{
+    width:50px;
+    height:30px;
+    background-color: #3b3c3d; ;
+    border-radius: 50%;
+    position: absolute;
+    top:10px;
+    left:2px;
+}
+
+.yumin .eyes .left .iris .glow , .yumin .eyes .right .iris .glow{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+.yumin .nose{
+    width:20px;
+    height:15px;
+    border-radius: 50%;
+    border: 2px solid var(--black);
+    border-right:none;
+    position: absolute;
+    top: 90px;
+    left: 130px;
+}
+
+.yumin .mouth {
+    width: 150px;
+    height: 75px;
+    background-color: white;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 70%;
+    border-bottom-left-radius: 70%;
+    position: absolute;
+    bottom:10px;
+    left:70px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    border: 2px solid var(--black);
+}
+
+.yumin .tooth{
+    width: 100%;
+    height:100%;
+    border: 1px solid var(--black);
+    /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
+}
+
+.yumin .tooth:nth-child(2){
+    background-color: var(--black);
+}
+
+.yumin .lower-tooth{
+    border-bottom:none
+}
+
+.yumin .upper-tooth{
+    border-top:none
+}
+
+.yumin .name{
+    color: #ff00bf;
+}
+
+/*for all*/
+
+.frooz .face:hover, .glea .face:hover, .yumin .face:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.frooz .name, .glea .name, .yumin .name{
+    font-family: "Combo";
+    font-weight: 900;
+    font-size:20px;
+}
